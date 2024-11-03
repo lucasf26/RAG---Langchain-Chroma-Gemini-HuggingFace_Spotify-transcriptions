@@ -1,0 +1,17 @@
+About Dataset
+
+This dataset contains 200 Acquired Podcast Transcripts we collected from the official website (https://www.acquired.fm/) with metadata specified in acquired_metadata.csv.
+
+The 200 transcripts contain approximately 3.5 million words, equivalent to about 5,500 pages when formatted into a Word document.
+
+We also developed a QA dataset for RAG evaluation in acquired-qa-evaluation.csv, which contains the following columns:
+
+    question: The question posed for evaluation.
+    human_answer: The answer provided by a human.
+    ai_answer_without_the_transcript: The answer provided by an AI model without access to the transcript.
+    ai_answer_without_the_transcript_correctness: The factual accuracy of the AI answer without the transcript verified by a human.
+    ai_answer_with_the_transcript: The answer provided by an AI model with access to the transcript.
+    ai_answer_with_the_transcript_correctness: The factual accuracy of the AI answer with the transcript verified by a human.
+    quality_rating_for_answer_with_transcript: The quality of the AI answer rated by a human.
+    post_url: The URL of the podcast episode related to the question.
+    file_name: The name of the transcript file associated with the episode.
