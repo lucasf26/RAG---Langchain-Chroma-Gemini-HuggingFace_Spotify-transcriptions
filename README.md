@@ -1,7 +1,4 @@
-## RAG usando langchain, base de datos vectorial Chroma, embedding de HuggingFace y una API de Gemini (LLM de Google):
+## RAG usando langchain, base de datos vectorial Chroma, sentence-embeddings de HuggingFace y API de Gemini:
 *  Se lee el archivo de evaluación: contiene preguntas sobre cada archivo con las respuestas correctas.
-*  Se leen 5 transcripciones de cada podcast, se splitean y se guardan en la base de datos Chroma, usando un embedding de HuggingFace.
-*  Se crea una función para consultar a Gemini haciendo uso del RAG.
-
-#### Se chequeó que funciona bastante bien para varias de las preguntas de evaluación.
-#### Como trabajo a futuro, se podría hacer una estadística de performance del RAG.
+*  Se leen 5 transcripciones de cada podcast, se splitean y se guardan en la base de datos Chroma, usando un modelo de sentence-embedding.
+*  Se crea el RAG: al hacer una pregunta, se consulta a la base de datos, se crea un prompt y se obtiene una respuesta de Gemini.
